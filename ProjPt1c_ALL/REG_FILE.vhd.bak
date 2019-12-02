@@ -1,0 +1,42 @@
+--REG_FILE.vhd
+--This package implements a register file; using the 8-To-1 MUX, 3-To-8 decoder, DFF & pseudoregister.
+--Single structural operations are being implemented exploiting the logic from various files accordingly.
+--All of the implemented operations in this file are styled in structural architecture.
+--Authors: Georgios M. Moschovis (p3150113@aueb.gr)
+--         Dimitrios Vetsis (p3120019@aueb.gr)
+
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+
+PACKAGE REG_FILE is
+
+COMPONENT reg0
+	GENERIC(n: INTEGER := 16);
+	PORT (Input: IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
+			Clock, Enable: IN STD_LOGIC;
+			Output: OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
+		END COMPONENT;
+		
+END PACKAGE REG_FILE;
+
+--package body declarations
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+--package body
+ENTITY reg0 IS 
+	GENERIC (n : INTEGER := 16);
+	PORT (Input: IN STD_LOGIC_VECTOR(n-1 DOWNTO 0);
+			Clock, Enable: IN STD_LOGIC;
+			Output: OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
+END reg0;
+
+ARCHITECTURE StructuralArchUnit OF reg0 IS
+	COMPONENT ReseterNo1
+		GENERIC(n: INTEGER := 16);
+		PORT (out2: OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
+	END COMPONENT;
+	
+	BEGIN
+		    	--Component instantiations statements
+		U0: ReseterNo1 PORT MAP(Output);
+END StructuralArchUnit;

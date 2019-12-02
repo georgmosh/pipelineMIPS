@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\George\QuartusProjects\VHDL_Part1_2019\ProjPt1c_ALL\simulation\qsim
+vMyCircuit
+Z1 !s100 YgQ<o<Cj[2J4>LD_li[:;1
+Z2 IK9A7FMRi_ogNXm3Jc]2D01
+Z3 VdLIHUkC00Q:?9LoFfcjl83
+Z4 dF:\COURSES\Architecture\ergasia3\ProjPt1c_ALL\simulation\qsim
+Z5 w1558664191
+Z6 8MyCircuit.vo
+Z7 FMyCircuit.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|MyCircuit.vo|
+Z10 o-work work -O0
+Z11 n@my@circuit
+!i10b 1
+!s85 0
+Z12 !s108 1558664191.769000
+Z13 !s107 MyCircuit.vo|
+!s101 -O0
+vMyCircuit_vlg_check_tst
+!i10b 1
+Z14 !s100 5221j>_oM^o_VhaB9R@zU2
+Z15 I:cEXkOjMGX^ZjK;2nD_e20
+Z16 Vc=13CML[U=;5FYz2N^AL;1
+R4
+Z17 w1558664190
+Z18 8MyCircuit.vt
+Z19 FMyCircuit.vt
+L0 65
+R8
+r1
+!s85 0
+31
+Z20 !s108 1558664192.083000
+Z21 !s107 MyCircuit.vt|
+Z22 !s90 -work|work|MyCircuit.vt|
+!s101 -O0
+R10
+Z23 n@my@circuit_vlg_check_tst
+vMyCircuit_vlg_sample_tst
+!i10b 1
+Z24 !s100 V1_VnO^lBFfJNzJiRV]0S3
+Z25 I0f3fkZAMARg4BkdNIEQKc3
+Z26 VL]5TQ_lM1NSm_=zU]z9`D2
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@my@circuit_vlg_sample_tst
+vMyCircuit_vlg_vec_tst
+!i10b 1
+!s100 ;[fYZPehcFbczM5LMF;aU1
+I4;g4QC2R?2o;9eMC;VHS;2
+Z28 V0d1EKLXa;E[DQl3hDDOAL3
+R4
+R17
+R18
+R19
+Z29 L0 3069
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@my@circuit_vlg_vec_tst

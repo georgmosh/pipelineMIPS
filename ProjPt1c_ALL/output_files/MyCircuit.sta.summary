@@ -1,0 +1,957 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'clock'
+Slack : -12.132
+TNS   : -325.782
+
+Type  : Slow Model Hold 'clock'
+Slack : -1.388
+TNS   : -5.672
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U2|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : -6.688
+TNS   : -6.688
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U3|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : -6.470
+TNS   : -6.470
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U4|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : -6.389
+TNS   : -6.389
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U3|DFF1:U5|MYNAND2:U1|compOut~1'
+Slack : -6.343
+TNS   : -6.343
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U4|DFF1:U7|MYNAND2:U1|compOut~1'
+Slack : -5.964
+TNS   : -5.964
+
+Type  : Slow Model Recovery 'reg:PC|DFF1:U0|MYNAND2:U1|compOut~1'
+Slack : -5.908
+TNS   : -5.908
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U7|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : -5.868
+TNS   : -5.868
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U7|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : -5.813
+TNS   : -5.813
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U6|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : -5.737
+TNS   : -5.737
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U8|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : -5.656
+TNS   : -5.656
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U8|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : -5.609
+TNS   : -5.609
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U6|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : -5.594
+TNS   : -5.594
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U3|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : -5.589
+TNS   : -5.589
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U7|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : -5.577
+TNS   : -5.577
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U8|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : -5.515
+TNS   : -5.515
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U2|DFF1:U4|MYNAND2:U1|compOut~1'
+Slack : -5.405
+TNS   : -5.405
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U3|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : -5.332
+TNS   : -5.332
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U8|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : -5.324
+TNS   : -5.324
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U6|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : -5.312
+TNS   : -5.312
+
+Type  : Slow Model Recovery 'reg:PC|DFF1:U8|MYNAND2:U1|compOut~1'
+Slack : -5.295
+TNS   : -5.295
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U8|DFF1:U0|MYNAND2:U1|compOut~1'
+Slack : -5.267
+TNS   : -5.267
+
+Type  : Slow Model Recovery 'reg:PC|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : -5.261
+TNS   : -5.261
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U3|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : -5.127
+TNS   : -5.127
+
+Type  : Slow Model Recovery 'reg:PC|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : -5.085
+TNS   : -5.085
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U5|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : -4.936
+TNS   : -4.936
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U2|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : -4.933
+TNS   : -4.933
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U6|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : -4.901
+TNS   : -4.901
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U5|DFF1:U2|MYNAND2:U1|compOut~1'
+Slack : -4.894
+TNS   : -4.894
+
+Type  : Slow Model Recovery 'reg:PC|DFF1:U5|MYNAND2:U1|compOut~1'
+Slack : -4.820
+TNS   : -4.820
+
+Type  : Slow Model Recovery 'reg:PC|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : -4.796
+TNS   : -4.796
+
+Type  : Slow Model Recovery 'reg:PC|DFF1:U7|MYNAND2:U1|compOut~1'
+Slack : -4.776
+TNS   : -4.776
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U7|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : -4.743
+TNS   : -4.743
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U5|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : -4.697
+TNS   : -4.697
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U4|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : -4.642
+TNS   : -4.642
+
+Type  : Slow Model Recovery 'reg:PC|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : -4.491
+TNS   : -4.491
+
+Type  : Slow Model Recovery 'reg:PC|DFF1:U9|MYNAND2:U1|compOut~1'
+Slack : -4.293
+TNS   : -4.293
+
+Type  : Slow Model Recovery 'regFile:RegisterFile|reg:U8|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : -4.269
+TNS   : -4.269
+
+Type  : Slow Model Recovery 'clock2'
+Slack : -1.459
+TNS   : -20.257
+
+Type  : Slow Model Recovery 'clock'
+Slack : -0.587
+TNS   : -0.631
+
+Type  : Slow Model Removal 'clock2'
+Slack : -0.803
+TNS   : -13.505
+
+Type  : Slow Model Removal 'clock'
+Slack : -0.656
+TNS   : -1.933
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U2|DFF1:U4|MYNAND2:U1|compOut~1'
+Slack : 1.110
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U5|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 1.519
+TNS   : 0.000
+
+Type  : Slow Model Removal 'reg:PC|DFF1:U9|MYNAND2:U1|compOut~1'
+Slack : 1.639
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U2|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : 1.775
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U4|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : 1.844
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U8|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : 1.917
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U7|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : 2.012
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U6|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : 2.017
+TNS   : 0.000
+
+Type  : Slow Model Removal 'reg:PC|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : 2.080
+TNS   : 0.000
+
+Type  : Slow Model Removal 'reg:PC|DFF1:U7|MYNAND2:U1|compOut~1'
+Slack : 2.124
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U5|DFF1:U2|MYNAND2:U1|compOut~1'
+Slack : 2.125
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U5|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 2.182
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U3|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : 2.251
+TNS   : 0.000
+
+Type  : Slow Model Removal 'reg:PC|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : 2.329
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U3|DFF1:U5|MYNAND2:U1|compOut~1'
+Slack : 2.346
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U3|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : 2.364
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U4|DFF1:U7|MYNAND2:U1|compOut~1'
+Slack : 2.376
+TNS   : 0.000
+
+Type  : Slow Model Removal 'reg:PC|DFF1:U5|MYNAND2:U1|compOut~1'
+Slack : 2.500
+TNS   : 0.000
+
+Type  : Slow Model Removal 'reg:PC|DFF1:U0|MYNAND2:U1|compOut~1'
+Slack : 2.515
+TNS   : 0.000
+
+Type  : Slow Model Removal 'reg:PC|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 2.520
+TNS   : 0.000
+
+Type  : Slow Model Removal 'reg:PC|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 2.568
+TNS   : 0.000
+
+Type  : Slow Model Removal 'reg:PC|DFF1:U8|MYNAND2:U1|compOut~1'
+Slack : 2.628
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U7|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : 2.800
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U8|DFF1:U0|MYNAND2:U1|compOut~1'
+Slack : 2.813
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U7|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 2.820
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U3|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 2.843
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U4|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : 2.867
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U6|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 2.883
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U7|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : 2.947
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U8|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : 2.964
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U6|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : 2.994
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U8|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 3.029
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U3|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : 3.051
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U8|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 3.114
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U8|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : 3.124
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U2|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 3.127
+TNS   : 0.000
+
+Type  : Slow Model Removal 'regFile:RegisterFile|reg:U6|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 3.166
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -78.380
+
+Type  : Slow Model Minimum Pulse Width 'clock2'
+Slack : -1.222
+TNS   : -1.222
+
+Type  : Slow Model Minimum Pulse Width 'reg:PC|DFF1:U0|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'reg:PC|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'reg:PC|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'reg:PC|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'reg:PC|DFF1:U5|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'reg:PC|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'reg:PC|DFF1:U7|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'reg:PC|DFF1:U8|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'reg:PC|DFF1:U9|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U2|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U2|DFF1:U4|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U2|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U3|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U3|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U3|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U3|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U3|DFF1:U5|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U4|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U4|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U4|DFF1:U7|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U5|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U5|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U5|DFF1:U2|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U6|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U6|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U6|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U6|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U7|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U7|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U7|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U7|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U8|DFF1:U0|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U8|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U8|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U8|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U8|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'regFile:RegisterFile|reg:U8|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Setup 'clock'
+Slack : -4.544
+TNS   : -102.895
+
+Type  : Fast Model Hold 'clock'
+Slack : -1.044
+TNS   : -13.578
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U2|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : -3.094
+TNS   : -3.094
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U3|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : -2.986
+TNS   : -2.986
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U4|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : -2.967
+TNS   : -2.967
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U3|DFF1:U5|MYNAND2:U1|compOut~1'
+Slack : -2.938
+TNS   : -2.938
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U4|DFF1:U7|MYNAND2:U1|compOut~1'
+Slack : -2.795
+TNS   : -2.795
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U7|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : -2.683
+TNS   : -2.683
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U7|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : -2.679
+TNS   : -2.679
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U6|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : -2.664
+TNS   : -2.664
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U6|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : -2.636
+TNS   : -2.636
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U8|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : -2.632
+TNS   : -2.632
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U8|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : -2.631
+TNS   : -2.631
+
+Type  : Fast Model Recovery 'reg:PC|DFF1:U0|MYNAND2:U1|compOut~1'
+Slack : -2.585
+TNS   : -2.585
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U3|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : -2.583
+TNS   : -2.583
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U7|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : -2.576
+TNS   : -2.576
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U8|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : -2.560
+TNS   : -2.560
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U6|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : -2.499
+TNS   : -2.499
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U8|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : -2.484
+TNS   : -2.484
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U8|DFF1:U0|MYNAND2:U1|compOut~1'
+Slack : -2.482
+TNS   : -2.482
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U3|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : -2.479
+TNS   : -2.479
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U2|DFF1:U4|MYNAND2:U1|compOut~1'
+Slack : -2.459
+TNS   : -2.459
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U3|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : -2.342
+TNS   : -2.342
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U5|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : -2.341
+TNS   : -2.341
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U5|DFF1:U2|MYNAND2:U1|compOut~1'
+Slack : -2.333
+TNS   : -2.333
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U2|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : -2.321
+TNS   : -2.321
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U6|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : -2.318
+TNS   : -2.318
+
+Type  : Fast Model Recovery 'reg:PC|DFF1:U8|MYNAND2:U1|compOut~1'
+Slack : -2.292
+TNS   : -2.292
+
+Type  : Fast Model Recovery 'reg:PC|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : -2.284
+TNS   : -2.284
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U7|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : -2.223
+TNS   : -2.223
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U5|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : -2.205
+TNS   : -2.205
+
+Type  : Fast Model Recovery 'reg:PC|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : -2.194
+TNS   : -2.194
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U4|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : -2.177
+TNS   : -2.177
+
+Type  : Fast Model Recovery 'reg:PC|DFF1:U5|MYNAND2:U1|compOut~1'
+Slack : -2.082
+TNS   : -2.082
+
+Type  : Fast Model Recovery 'reg:PC|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : -2.067
+TNS   : -2.067
+
+Type  : Fast Model Recovery 'reg:PC|DFF1:U7|MYNAND2:U1|compOut~1'
+Slack : -2.056
+TNS   : -2.056
+
+Type  : Fast Model Recovery 'regFile:RegisterFile|reg:U8|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : -2.006
+TNS   : -2.006
+
+Type  : Fast Model Recovery 'reg:PC|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : -1.947
+TNS   : -1.947
+
+Type  : Fast Model Recovery 'reg:PC|DFF1:U9|MYNAND2:U1|compOut~1'
+Slack : -1.833
+TNS   : -1.833
+
+Type  : Fast Model Recovery 'clock2'
+Slack : -0.414
+TNS   : -2.972
+
+Type  : Fast Model Recovery 'clock'
+Slack : -0.167
+TNS   : -0.167
+
+Type  : Fast Model Removal 'clock2'
+Slack : 0.006
+TNS   : 0.000
+
+Type  : Fast Model Removal 'clock'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U2|DFF1:U4|MYNAND2:U1|compOut~1'
+Slack : 0.611
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U5|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 0.860
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U4|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : 0.976
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U2|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : 0.997
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U8|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : 1.023
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U7|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : 1.082
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U6|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : 1.084
+TNS   : 0.000
+
+Type  : Fast Model Removal 'reg:PC|DFF1:U9|MYNAND2:U1|compOut~1'
+Slack : 1.100
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U3|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : 1.162
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U5|DFF1:U2|MYNAND2:U1|compOut~1'
+Slack : 1.165
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U5|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 1.173
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U4|DFF1:U7|MYNAND2:U1|compOut~1'
+Slack : 1.225
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U3|DFF1:U5|MYNAND2:U1|compOut~1'
+Slack : 1.280
+TNS   : 0.000
+
+Type  : Fast Model Removal 'reg:PC|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : 1.322
+TNS   : 0.000
+
+Type  : Fast Model Removal 'reg:PC|DFF1:U7|MYNAND2:U1|compOut~1'
+Slack : 1.325
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U3|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : 1.342
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U7|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 1.411
+TNS   : 0.000
+
+Type  : Fast Model Removal 'reg:PC|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : 1.412
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U7|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : 1.415
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U3|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 1.439
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U4|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : 1.440
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U8|DFF1:U0|MYNAND2:U1|compOut~1'
+Slack : 1.447
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U6|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 1.461
+TNS   : 0.000
+
+Type  : Fast Model Removal 'reg:PC|DFF1:U5|MYNAND2:U1|compOut~1'
+Slack : 1.484
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U7|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : 1.486
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U6|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : 1.494
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U8|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : 1.496
+TNS   : 0.000
+
+Type  : Fast Model Removal 'reg:PC|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 1.498
+TNS   : 0.000
+
+Type  : Fast Model Removal 'reg:PC|DFF1:U0|MYNAND2:U1|compOut~1'
+Slack : 1.513
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U3|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : 1.520
+TNS   : 0.000
+
+Type  : Fast Model Removal 'reg:PC|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 1.524
+TNS   : 0.000
+
+Type  : Fast Model Removal 'reg:PC|DFF1:U8|MYNAND2:U1|compOut~1'
+Slack : 1.558
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U8|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : 1.565
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U8|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 1.582
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U2|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 1.593
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U6|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 1.599
+TNS   : 0.000
+
+Type  : Fast Model Removal 'regFile:RegisterFile|reg:U8|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 1.602
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clock'
+Slack : -1.380
+TNS   : -78.380
+
+Type  : Fast Model Minimum Pulse Width 'clock2'
+Slack : -1.222
+TNS   : -1.222
+
+Type  : Fast Model Minimum Pulse Width 'reg:PC|DFF1:U0|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'reg:PC|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'reg:PC|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'reg:PC|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'reg:PC|DFF1:U5|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'reg:PC|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'reg:PC|DFF1:U7|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'reg:PC|DFF1:U8|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'reg:PC|DFF1:U9|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U2|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U2|DFF1:U4|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U2|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U3|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U3|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U3|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U3|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U3|DFF1:U5|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U4|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U4|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U4|DFF1:U7|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U5|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U5|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U5|DFF1:U2|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U6|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U6|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U6|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U6|DFF1:U6|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U7|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U7|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U7|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U7|DFF1:U3|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U8|DFF1:U0|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U8|DFF1:U10|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U8|DFF1:U12|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U8|DFF1:U14|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U8|DFF1:U15|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'regFile:RegisterFile|reg:U8|DFF1:U1|MYNAND2:U1|compOut~1'
+Slack : 0.500
+TNS   : 0.000
+
+------------------------------------------------------------

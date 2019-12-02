@@ -1,0 +1,60 @@
+--DFF1bit.vhd
+--This package implements a n-bit D-FF slice; actually acting as 1-bit memory register.
+--Single structural operations are being implemented exploiting the logic from basic_func3.vhd
+--Authors: Georgios M. Moschovis (p3150113@aueb.gr)
+--         Dimitrios Vetsis (p3120019@aueb.gr)
+
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+
+PACKAGE DFF1bit is
+
+	COMPONENT DFF1
+		PORT (input, Clock, Enable : IN STD_LOGIC;
+			output : OUT STD_LOGIC);
+		END COMPONENT;
+		
+END PACKAGE DFF1bit;
+
+--package body declarations
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+--package body
+	ENTITY DFF1 is 
+		PORT (input, Clock, Enable : IN STD_LOGIC;
+			output : OUT STD_LOGIC);
+	END DFF1;
+	
+	ARCHITECTURE StructuralArchUnit OF DFF1 IS
+	
+	COMPONENT MYAND2 
+		PORT ( x1, x2: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END COMPONENT;
+
+	COMPONENT MYNAND2
+		PORT ( x1, x2: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT MYNOT1
+		PORT ( x1: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END COMPONENT;
+	
+	--declaration of signals used to interconnect gates
+	SIGNAL AfterClock, temp1, temp2, out1, out2, out3, out4, out5, out6: std_LOGIC;
+	
+	BEGIN
+			--Component instantiations statements
+		U0: MYNAND2 PORT MAP(out1, out4, out3);
+		U1: MYNAND2 PORT MAP(AfterClock, out3, out1);
+		U2: MYAND2 PORT MAP(out1, out4, temp1);
+		U3: MYAND2 PORT MAP(AfterClock, temp1, temp2);
+		U4: MYNOT1 PORT MAP(temp2, out2);
+		U5: MYNAND2 PORT MAP(Input, out2, out4);
+		U6: MYNAND2 PORT MAP(out6, out1, out5);
+		U7: MYNAND2 PORT MAP(out2, out5, out6);
+		U8: MYAND2 PORT MAP(Clock, Enable, AfterClock);
+		U9: MYAND2 PORT MAP(out5, out5, Output);
+	END StructuralArchUnit;

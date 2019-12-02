@@ -1,0 +1,324 @@
+--basic_func3.vhd
+--This package implements all the basic components (logical gates) for digital design.
+--ONLY for these basic functions; code style uses behavioral architecture.
+--Author: Georgios M. Moschovis (p3150113@aueb.gr)
+
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+
+PACKAGE basic_func3 is
+	COMPONENT MPlexerNo1 
+		PORT (x, s : IN STD_LOGIC; 
+				outm : OUT STD_LOGIC);
+	END COMPONENT;
+
+	COMPONENT MPlexerNo2	
+		PORT (x1, x2, x3, x4: IN STD_LOGIC;
+				s	: IN 	STD_LOGIC_VECTOR(1 DOWNTO 0);
+				res : OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT MPlexerNo3	
+		PORT (s	: IN 	STD_LOGIC_VECTOR(2 DOWNTO 0);
+				res : OUT STD_LOGIC_VECTOR(1 DOWNTO 0));
+	END COMPONENT;
+	
+	COMPONENT MPlexerNo4	
+		PORT (s	: IN 	STD_LOGIC_VECTOR(2 DOWNTO 0);
+				res : OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT MPlexerNo5	
+		PORT (s	: IN 	STD_LOGIC_VECTOR(2 DOWNTO 0);
+				res : OUT STD_LOGIC_VECTOR(1 DOWNTO 0));
+	END COMPONENT;
+	
+	COMPONENT MPlexerNo6
+		PORT (s	: IN 	STD_LOGIC_VECTOR(2 DOWNTO 0);
+				res : OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT MPlexerNo7
+		PORT (s	: IN 	STD_LOGIC_VECTOR(2 DOWNTO 0);
+				opt : OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT MPlexerNo8	
+		PORT (s	: IN STD_LOGIC;
+				ALURes, compRes: IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+				res : OUT STD_LOGIC_VECTOR(15 DOWNTO 0));
+	END COMPONENT;
+	
+	COMPONENT MPlexerNo9 
+		PORT (x : IN STD_LOGIC; 
+				s : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+				outm : OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT AdderNo1 
+		PORT (x1, x2, cin: IN STD_LOGIC;
+				out2, cout : OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT ComparerNo1 
+		PORT (x1: IN STD_LOGIC;
+				out2 : OUT STD_LOGIC_VECTOR(15 DOWNTO 0));
+	END COMPONENT;
+	
+	COMPONENT MYAND2 
+		PORT ( x1, x2: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END COMPONENT;
+
+	COMPONENT MYOR2 
+		PORT ( x1, x2: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT MYXOR2 
+		PORT ( x1, x2: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT MYNAND2
+		PORT ( x1, x2: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT MYNOT1
+		PORT ( x1: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END COMPONENT;
+	
+END PACKAGE basic_func3;
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+--package body
+	ENTITY MPlexerNo1 is 
+		PORT (x, s : IN STD_LOGIC; 
+				outm : OUT STD_LOGIC);
+	END MPlexerNo1;
+	ARCHITECTURE FunctUnitLogic OF MPlexerNo1 IS
+		BEGIN
+			WITH s SELECT
+				outm <= x WHEN '0',
+						NOT x WHEN OTHERS;
+	END FunctUnitLogic;
+	
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+	ENTITY MPlexerNo2 is 
+		PORT (x1, x2, x3, x4: IN STD_LOGIC;
+				s	: IN 	STD_LOGIC_VECTOR(1 DOWNTO 0) ;
+				res : OUT STD_LOGIC);
+	END MPlexerNo2;
+	ARCHITECTURE FunctUnitLogic2 OF MPlexerNo2 IS
+		BEGIN
+			WITH s SELECT
+				res <= x1 WHEN "00",
+						x2 WHEN "01",
+						x4 WHEN "10",
+						x3 WHEN OTHERS;
+	END FunctUnitLogic2;
+	
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+	ENTITY MPlexerNo3 is 
+		PORT (s	: IN 	STD_LOGIC_VECTOR(2 DOWNTO 0);
+				res : OUT STD_LOGIC_VECTOR(1 DOWNTO 0));
+	END MPlexerNo3;
+	ARCHITECTURE FunctUnitLogic3 OF MPlexerNo3 IS
+		BEGIN
+			WITH s SELECT
+				res <= "00" WHEN "010",
+						"01" WHEN "011",
+						"11" WHEN "000",
+						"11" WHEN "001",
+						"00" WHEN "101",
+						"00" WHEN "111",
+						"10" WHEN "110",
+						"--" WHEN OTHERS;
+	END FunctUnitLogic3;
+	
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+	ENTITY MPlexerNo4 is 
+		PORT (s	: IN 	STD_LOGIC_VECTOR(2 DOWNTO 0);
+				res : OUT STD_LOGIC);
+	END MPlexerNo4;
+	ARCHITECTURE FunctUnitLogic4 OF MPlexerNo4 IS
+		BEGIN
+			WITH s SELECT
+				res <= '0' WHEN "010",
+						'0' WHEN "011",
+						'0' WHEN "000",
+						'0' WHEN "001",
+						'0' WHEN "110",
+						'0' WHEN "100",
+						'1' WHEN "101",
+						'1' WHEN "111",
+						'-' WHEN OTHERS;
+	END FunctUnitLogic4;
+
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+	ENTITY MPlexerNo5 is 
+		PORT (s	: IN 	STD_LOGIC_VECTOR(2 DOWNTO 0);
+				res : OUT STD_LOGIC_VECTOR(1 DOWNTO 0));
+	END MPlexerNo5;
+	ARCHITECTURE FunctUnitLogic5 OF MPlexerNo5 IS
+		BEGIN
+			WITH s SELECT
+				res <= "00" WHEN "010",
+						"00" WHEN "011",
+						"00" WHEN "000",
+						"00" WHEN "110",
+						"10" WHEN "101",
+						"01" WHEN "001",
+						"01" WHEN "111",
+						"--" WHEN OTHERS;
+	END FunctUnitLogic5;
+
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+	ENTITY MPlexerNo6 is 
+		PORT (s	: IN 	STD_LOGIC_VECTOR(2 DOWNTO 0);
+				res : OUT STD_LOGIC);
+	END MPlexerNo6;
+	ARCHITECTURE FunctUnitLogic6 OF MPlexerNo6 IS
+		BEGIN
+			WITH s SELECT
+				res <= '0' WHEN "000",
+						'1' WHEN "001",
+						'-' WHEN OTHERS;
+	END FunctUnitLogic6;
+	
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+	ENTITY MPlexerNo7 is 
+		PORT (s	: IN 	STD_LOGIC_VECTOR(2 DOWNTO 0);
+				opt : OUT STD_LOGIC);
+	END MPlexerNo7;
+	ARCHITECTURE FunctUnitLogic7 OF MPlexerNo7 IS
+		BEGIN
+			WITH s SELECT
+				opt <= '0' WHEN "010",
+						'0' WHEN "011",
+						'0' WHEN "000",
+						'0' WHEN "111",
+						'0' WHEN "101",
+						'0' WHEN "110",
+						'0' WHEN "001",
+						'1' WHEN "100",
+						'-' WHEN OTHERS;
+	END FunctUnitLogic7;
+	
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+	ENTITY MPlexerNo8 is 
+		PORT (s	: IN STD_LOGIC;
+				ALURes, compRes: IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+				res : OUT STD_LOGIC_VECTOR(15 DOWNTO 0));
+	END MPlexerNo8;
+	ARCHITECTURE FunctUnitLogic8 OF MPlexerNo8 IS
+		BEGIN
+			WITH s SELECT
+				res <= ALURes WHEN '0',
+						compRes WHEN OTHERS;
+	END FunctUnitLogic8;
+	
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+--package body
+	ENTITY MPlexerNo9 is 
+		PORT (x : IN STD_LOGIC; 
+				s : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+				outm : OUT STD_LOGIC);
+	END MPlexerNo9;
+	ARCHITECTURE FunctUnitLogic9 OF MPlexerNo9 IS
+		BEGIN
+			WITH s SELECT
+				outm <= x WHEN "00",
+						NOT x WHEN "01",
+						'1' WHEN "10",
+						'-' WHEN OTHERS;
+	END FunctUnitLogic9;
+	
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+	ENTITY AdderNo1 is 
+		PORT (x1, x2, cin: IN STD_LOGIC;
+				out2, cout : OUT STD_LOGIC);
+	END AdderNo1;
+	ARCHITECTURE FunctUnitLogicAdd OF AdderNo1 IS
+		BEGIN
+			out2 <= (x1 XOR x2) XOR cin;
+			cout <= (x2 AND cin) OR (x1 AND cin) OR (x1 AND x2) ;
+	END FunctUnitLogicAdd;
+	
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+	ENTITY ComparerNo1 is 
+		PORT (x1: IN STD_LOGIC;
+				out2 : OUT STD_LOGIC_VECTOR(15 DOWNTO 0));
+	END ComparerNo1;
+	ARCHITECTURE FunctUnitLogicComp OF ComparerNo1 IS
+		BEGIN
+			out2 <= "0000000000000000" WHEN (x1 = '1') ELSE "0000000000000001";
+	END FunctUnitLogicComp;
+	
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+	ENTITY MYAND2 is 
+		PORT ( x1, x2: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END MYAND2;
+	ARCHITECTURE FunctUnitLogicAnd2 OF MYAND2 IS
+		BEGIN
+			compOut <= x1 AND x2;
+	END FunctUnitLogicAnd2;
+	
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+	ENTITY MYOR2 is 
+		PORT ( x1, x2: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END MYOR2;
+	ARCHITECTURE FunctUnitLogicOr2 OF MYOR2 IS
+		BEGIN
+			compOut <= x1 OR x2;
+	END FunctUnitLogicOr2;
+
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+	ENTITY MYXOR2 is 
+		PORT ( x1, x2: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END MYXOR2;
+	ARCHITECTURE FunctUnitLogicXor2 OF MYXOR2 IS
+		BEGIN
+			compOut <= x1 XOR x2;
+	END FunctUnitLogicXor2;
+	
+	LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+	ENTITY MYNAND2 is 
+		PORT ( x1, x2: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END MYNAND2;
+	ARCHITECTURE FunctUnitLogicNand2 OF MYNAND2 IS
+		BEGIN
+			compOut <= NOT(x1 AND x2);
+	END FunctUnitLogicNand2;
+
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+	ENTITY MYNOT1 is 
+		PORT ( x1: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END MYNOT1;
+	ARCHITECTURE FunctUnitLogicNot1 OF MYNOT1 IS
+		BEGIN
+			compOut <= NOT x1;
+	END FunctUnitLogicNot1;

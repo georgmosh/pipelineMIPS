@@ -1,0 +1,153 @@
+LIBRARY IEEE, my_func;
+USE IEEE.std_logic_1164.all;
+USE ieee.std_logic_arith.all ;
+USE ieee.std_logic_unsigned.all ;
+USE ieee.std_logic_textio.all;
+USE work.basic_func3.all;
+USE work.ALU16bit.all;
+USE work.DFF16bit.all;
+USE work.ALU1bit.all;
+USE work.DFF1bit.all;
+
+--MyCircuit.vhd
+--This package implements the whole demanced circuit; using all of the previous components.
+--Single structural operations are being implemented exploiting the logic from basic_func3.vhd
+--All of the implemented operations in this file are styled in structural architecture.
+--Author: Georgios M. Moschovis (p3150113@aueb.gr)
+ENTITY MyCircuit IS 
+	PORT (Input: IN STD_LOGIC_VECTOR(0 TO 15);
+			Clock, Enable: IN STD_LOGIC;
+			Output: OUT STD_LOGIC_VECTOR(0 TO 15));
+END MyCircuit;
+
+ARCHITECTURE StructuralArchUnit OF MyCircuit IS
+	COMPONENT MPlexerNo1 
+		PORT (x, s : IN STD_LOGIC; 
+				outm : OUT STD_LOGIC);
+	END COMPONENT;
+
+	COMPONENT MPlexerNo2	
+		PORT (x1, x2, x3, x4: IN STD_LOGIC;
+				s	: IN 	STD_LOGIC_VECTOR(1 DOWNTO 0);
+				res : OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT MPlexerNo3	
+		PORT (s	: IN 	STD_LOGIC_VECTOR(2 DOWNTO 0);
+				res : OUT STD_LOGIC_VECTOR(1 DOWNTO 0));
+	END COMPONENT;
+	
+	COMPONENT MPlexerNo4	
+		PORT (s	: IN 	STD_LOGIC_VECTOR(2 DOWNTO 0);
+				res : OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT MPlexerNo5	
+		PORT (s	: IN 	STD_LOGIC_VECTOR(2 DOWNTO 0);
+				res : OUT STD_LOGIC_VECTOR(1 DOWNTO 0));
+	END COMPONENT;
+	
+	COMPONENT MPlexerNo6
+		PORT (s	: IN 	STD_LOGIC_VECTOR(2 DOWNTO 0);
+				res : OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT MPlexerNo7
+		PORT (s	: IN 	STD_LOGIC_VECTOR(2 DOWNTO 0);
+				opt : OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT MPlexerNo8	
+		PORT (s	: IN STD_LOGIC;
+				ALURes, compRes: IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+				res : OUT STD_LOGIC_VECTOR(15 DOWNTO 0));
+	END COMPONENT;
+	
+	COMPONENT MPlexerNo9 
+		PORT (x : IN STD_LOGIC; 
+				s : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+				outm : OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT AdderNo1 
+		PORT (x1, x2, cin: IN STD_LOGIC;
+				out2, cout : OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT ComparerNo1 
+		PORT (x1: IN STD_LOGIC;
+				out2 : OUT STD_LOGIC_VECTOR(15 DOWNTO 0));
+	END COMPONENT;
+	
+	COMPONENT MYAND2 
+		PORT ( x1, x2: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END COMPONENT;
+
+	COMPONENT MYOR2 
+		PORT ( x1, x2: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT MYXOR2 
+		PORT ( x1, x2: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT MYNAND2
+		PORT ( x1, x2: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END COMPONENT;
+	
+	COMPONENT MYNOT1
+		PORT ( x1: IN STD_LOGIC;
+				 compOut: OUT STD_LOGIC);
+	END COMPONENT;
+	
+	--1bit DFF
+	COMPONENT DFF1
+		PORT (input, Clock, Enable : IN STD_LOGIC;
+			output : OUT STD_LOGIC);
+	END COMPONENT;
+	
+	--16bit DFF
+	COMPONENT DFF16
+	PORT (Input: IN STD_LOGIC_VECTOR(0 TO 15);
+			Clock, Enable: IN STD_LOGIC;
+			Output: OUT STD_LOGIC_VECTOR(0 TO 15));
+	END COMPONENT;
+		
+	--1bit ALU
+	COMPONENT ALU is
+		PORT (a, b : IN STD_LOGIC;
+			opcode: STD_LOGIC_VECTOR(2 DOWNTO 0);
+			CarryOut, Result : OUT STD_LOGIC);
+	END COMPONENT;
+	
+	--16bit ALU
+	COMPONENT ALU16
+	PORT (A, B: IN std_LOGIC_VECTOR(0 TO 15);
+			opcode: IN 	STD_LOGIC_VECTOR(2 DOWNTO 0) ;
+			Result: OUT STD_LOGIC_VECTOR(0 TO 15);
+			Overflow: OUT STD_LOGIC);
+	END COMPONENT;
+	
+	BEGIN
+	    		--Component instantiations statements
+		U0: DFF1 PORT MAP(Input(0), Clock, Enable, Output(0));
+		U1: DFF1 PORT MAP(Input(1), Clock, Enable, Output(1));
+		U2: DFF1 PORT MAP(Input(2), Clock, Enable, Output(2));
+		U3: DFF1 PORT MAP(Input(3), Clock, Enable, Output(3));
+		U4: DFF1 PORT MAP(Input(4), Clock, Enable, Output(4));
+		U5: DFF1 PORT MAP(Input(5), Clock, Enable, Output(5));
+		U6: DFF1 PORT MAP(Input(6), Clock, Enable, Output(6));
+		U7: DFF1 PORT MAP(Input(7), Clock, Enable, Output(7));
+		U8: DFF1 PORT MAP(Input(8), Clock, Enable, Output(8));
+		U9: DFF1 PORT MAP(Input(9), Clock, Enable, Output(9));
+		U10: DFF1 PORT MAP(Input(10), Clock, Enable, Output(10));
+		U11: DFF1 PORT MAP(Input(11), Clock, Enable, Output(11));
+		U12: DFF1 PORT MAP(Input(12), Clock, Enable, Output(12));
+		U13: DFF1 PORT MAP(Input(13), Clock, Enable, Output(13));
+		U14: DFF1 PORT MAP(Input(14), Clock, Enable, Output(14));
+		U15: DFF1 PORT MAP(Input(15), Clock, Enable, Output(15));
+	END StructuralArchUnit;

@@ -1,0 +1,45 @@
+--MUX_JRopt.vhd
+--This package implements a selector for the Branch Offsets; using a behavioral multiplexer.
+--Conditional Branches (I-Type) as well as unconditional ones (J-Type) with different offset lengths are supported.
+--Single structural operations are being implemented exploiting the logic from basic_func3.vhd
+--All of the implemented operations in this file are styled in structural architecture.
+--Authors: Georgios M. Moschovis (p3150113@aueb.gr)
+--         Dimitrios Vetsis (p3120019@aueb.gr)
+
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+
+PACKAGE MUX_JRopt is
+
+	COMPONENT selector
+		GENERIC(n: INTEGER := 16);
+		PORT (regAddress, regAD_MEM, regAD_WB : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0); 
+				operation : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+				Output : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
+	END COMPONENT;
+		
+END PACKAGE MUX_JRopt;
+
+--package body declarations
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+--package body
+ENTITY selector IS 
+	GENERIC(n: INTEGER := 16);
+		PORT (regAddress, regAD_MEM, regAD_WB : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0); 
+				operation : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+				Output : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
+END selector;
+
+ARCHITECTURE StructuralArchUnit OF selector IS
+	COMPONENT MPlexerNo10
+		GENERIC(n: INTEGER := 16);
+		PORT (regAddress, regAD_MEM, regAD_WB : IN STD_LOGIC_VECTOR(n-1 DOWNTO 0); 
+				s : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
+				outm : OUT STD_LOGIC_VECTOR(n-1 DOWNTO 0));
+	END COMPONENT;
+	
+	BEGIN
+		    	--Component instantiations statements
+		U0: MPlexerNo10 PORT MAP(regAddress, regAD_MEM, regAD_WB, operation, Output);
+END StructuralArchUnit;
